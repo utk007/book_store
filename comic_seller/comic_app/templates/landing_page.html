@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+
+        {% load static %}
+
+    </head>
+
+    <body>
+
+        <div>
+        <table border="1">
+            <tr>
+                <td>name</td>
+                <td>description</td>
+                <td> image </td>
+            </tr>
+
+            <tr>
+            <td> batman </td>
+            <td> batman and joker </td>
+            <td>
+           <img src="{% static 'images/batman_and_joker.jpeg' %}" alt="Hi!" />
+           </td>
+
+            </tr>
+
+        </table>
+
+        </div>
+
+    </body>
+
+
+</html>
