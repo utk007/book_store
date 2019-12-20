@@ -16,14 +16,20 @@
                 <td> image </td>
             </tr>
 
+
+            {% for book in book_list %}
             <tr>
-            <td> batman </td>
-            <td> batman and joker </td>
-            <td>
-           <img src="{% static 'images/batman_and_joker.jpeg' %}" alt="Hi!" />
-           </td>
+                <td>
+                {{  book.name }}
+                </td>
+                <td> {{ book.description }}</td>
+                <td> 
+                    <img src="{{ book.comic_pic.url }}" />
+                </td>
 
             </tr>
+
+            {% endfor %}
 
         </table>
 

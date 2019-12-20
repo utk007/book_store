@@ -8,4 +8,4 @@ from comic_app.forms import BooksForm
 
 def get_all_books(request):
     book_list = Books.objects.all()
-    return render(request, 'landing_page.html', {'form': BooksForm})
+    return render(request, 'landing_page.html', {'book_list': book_list})
